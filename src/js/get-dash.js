@@ -86,6 +86,7 @@
 
 	function initDownloadButton() {
 		var _downloadButton = $('#download-detected-platform-button'),
+			_defaultDownloadText = $('.default-download-text'),
 			_detectedWallet = getBestWalletMatch(),
 			_notDetectedMessage = $('#platform-not-detected'),
 			_platform = platform
@@ -103,6 +104,7 @@
 				;
 			} else {
 				_notDetectedMessage.show();
+				_defaultDownloadText.show();
 			}
 		}
 		return _downloadButton;

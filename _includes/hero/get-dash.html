@@ -20,7 +20,16 @@
 			<p id="platform-not-detected" class="callout-blue">{% t pages.get-dash.hero-platform-not-detected %}</p>
 
 			<div class="hero__buttons hero__buttons--get-dash">
-				<button id="download-detected-platform-button" href="#" class="btn-blue-solid btn-large">{% t pages.get-dash.hero-download-btn %}</button>
+				<a id="download-detected-platform-button" href="#" class="btn-blue-solid btn-large">
+						<div class="spinner">
+							<div class="rect1"></div>
+							<div class="rect2"></div>
+							<div class="rect3"></div>
+							<div class="rect4"></div>
+							<div class="rect5"></div>
+						</div>
+						<span class="default-download-text">{% t pages.get-dash.hero-download-btn %}</span>
+					</a>
 				<a href="../wallets/" class="btn-large btn-white-solid">{% t pages.get-dash.hero-all-wallets-btn %}</a>
 			</div>
 		</section>
