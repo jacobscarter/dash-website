@@ -101,9 +101,7 @@
 					.click(onDownloadClick)
 					.show()
 				;
-				_notDetectedMessage.hide();
 			} else {
-				_downloadButton.hide();
 				_notDetectedMessage.show();
 			}
 		}
